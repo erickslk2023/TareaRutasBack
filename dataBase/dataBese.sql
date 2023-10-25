@@ -5,3 +5,9 @@ CREATE TABLE tbl_camisas(
     talla character varying(20),
     PRIMARY KEY(id)
 );
+
+CREATE TABLE tbl_carrusel(
+    id SERIAL NOT NULL,
+    foto bytea,
+    PRIMARY KEY(id)
+);

@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+
 require('dotenv').config();
 
 const port = process.env.PORT;
@@ -20,6 +21,13 @@ app.use(function(req, res, next){
 
 const tarea = require('./ruta/getGaleria');
 app.use('/api/galeria', tarea );
+
+const carrusel = require('./ruta/carrousel');
+app.use('/api/carrusel', carrusel );
+
+const champion = require('./ruta/champion');
+app.use('/api/champion', champion );
+
 
 
 app.listen( port, ()=>{
