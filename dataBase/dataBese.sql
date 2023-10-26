@@ -11,3 +11,25 @@ CREATE TABLE tbl_carrusel(
     foto bytea,
     PRIMARY KEY(id)
 );
+
+CREATE TABLE tbl_carrusel(
+    id SERIAL NOT NULL,
+    foto bytea,
+    PRIMARY KEY(id)
+);
+
+CREATE TABLE tbl_estadios(
+    id SERIAL NOT NULL,
+    nombre VARCHAR (100),
+    aforo INT,
+    foto bytea,
+    PRIMARY KEY(id)
+);
+CREATE TABLE tbl_entrenadores(
+    id SERIAL NOT NULL,
+    nombre VARCHAR (100),
+    equipo INT,
+    foto bytea,
+    descripcio TEXT,
+    PRIMARY KEY(id)
+);

@@ -28,6 +28,13 @@ app.use('/api/carrusel', carrusel );
 const champion = require('./ruta/champion');
 app.use('/api/champion', champion );
 
+const estadios = require('./ruta/estadios');
+app.use('/api/estadios', estadios );
+
+const entrenadores = require('./ruta/entrenadores');
+app.use('/api/entrenadores', entrenadores );
+
+
 
 
 app.listen( port, ()=>{
